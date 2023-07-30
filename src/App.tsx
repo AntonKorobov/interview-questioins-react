@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 export const App: FC = () => {
   return (
     <div>
-      <h1>Hello!</h1>
-      <Link to="about">About Us</Link>
+      <Link to="class-components">Class component</Link>
     </div>
   );
 };

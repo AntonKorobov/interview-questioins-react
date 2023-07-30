@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ClassInput } from 'components/ClassComponents/ClassInput';
 
 import { App } from './App';
 
@@ -10,13 +11,8 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: 'about',
-    element: (
-      <div>
-        <h2>About page</h2>
-        <Link to="/">Main page</Link>
-      </div>
-    )
+    path: 'class-components',
+    element: <ClassInput />
   }
 ]);
 
